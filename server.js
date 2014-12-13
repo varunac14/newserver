@@ -32,7 +32,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/gumball/:id', routes.index);
+app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/gumball/:id',restCall.getCall);
 app.put('/gumball/:id',restCall.putCall);
